@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('page-title')
-    TrainsHome
+    TrainsList
 @endsection
 
 @section('main-content')
