@@ -7,6 +7,7 @@
 @section('main-content')
 <main>
     <div class="container">
+        <h1 class="text-center">Train list</h1>
         <div class="row row-cols-3 g-5">
             @foreach ($trains as $train)
             <div class="col-3">

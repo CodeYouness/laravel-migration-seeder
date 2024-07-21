@@ -6,7 +6,7 @@
 
 @section('main-content')
 <main>
-    <h1>
+    <h1 class="text-center">
         homepage
     </h1>
 </main>
