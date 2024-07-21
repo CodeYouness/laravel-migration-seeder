@@ -12,11 +12,11 @@
             <div class="col-3">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                        <h5 class="card-title">{{$train->azienda }}</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">da {{$train->stazione_di_partenza}} a {{$train->stazione_di_arrivo}}</h6>
+                        <p class="card-text">programmato per le {{$train->orario_di_partenza}} con arrivo per le: {{$train->orario_di_arrivo}}</p>
+                        <span class="card-link">{{($train->in_orario) ? 'in orario':'in ritardo'}}</span>
+                        <span class="card-link">{{($train->cancellato) ? 'e cancellato':''}}</span>
                     </div>
                 </div>
             </div>
